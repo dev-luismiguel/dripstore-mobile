@@ -1,0 +1,7 @@
+/.expo
+node_modules
+**/*.d.ts
+supabase/database.types.ts
+dist
+ios
+android

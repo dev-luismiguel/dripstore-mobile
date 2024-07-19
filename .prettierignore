@@ -1,0 +1,8 @@
+.expo
+node_modules
+.yarn
+.github
+.firebase
+ios
+android
+supabase/database.types.ts
