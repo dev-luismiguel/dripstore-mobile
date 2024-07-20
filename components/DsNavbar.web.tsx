@@ -1,18 +1,19 @@
 import { FC } from "react";
-import { StyleSheet, View } from "react-native";
+import { SafeAreaView, StyleSheet, View } from "react-native";
 
 import { SPACING } from "@/theme/spacing";
 
 export const DsNavbar: FC = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.logo} />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={[styles.logo, styles.blue]} />
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "pink",
     borderWidth: 1,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -24,5 +25,15 @@ const styles = StyleSheet.create({
     width: 40,
     borderWidth: 1,
   },
+  red: {
+    backgroundColor: "red",
+  },
+  orange: {
+    backgroundColor: "orange",
+  },
+  blue: {
+    backgroundColor: "blue",
+  },
+
   item: {},
 });
