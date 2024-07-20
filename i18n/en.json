@@ -3,5 +3,34 @@
   "explore_screen": {
     "title": "Explore",
     "description": "Find new places to visit"
+  },
+  "logo": {
+    "title": "Digital Colleger"
+  },
+  "footer": {
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem possimus similique sint blanditiis adipisci commodi, inventore animi laboriosam veniam ipsum cupiditate iusto? Aliquid, officia quidem! Dignissimos nisi animi illum.",
+    "infomation": {
+      "tite": "Informations",
+      "about_us": "About Drip Store",
+      "security": "Security",
+      "wishlist": "Wishlist",
+      "blog": "Blog",
+      "work_with_us": "Work With Drip Store",
+      "my_orders": "My Orders"
+    },
+    "section": {
+      "title": "Sections",
+      "t-shirt": "T-Shirt",
+      "pants": "Pants",
+      "caps": "Caps",
+      "shoes": "Shoes"
+    },
+    "contacts": {
+      "title": "Contact Us",
+      "email": "Email: 123@example.com",
+      "phone": "Phone: +1 123-456-7890",
+      "address": "Address: 123 Main St, City, State, 12345"
+    },
+    "copyright": "@ 2022 Digital Colleger"
   }
 }

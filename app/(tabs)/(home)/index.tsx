@@ -1,11 +1,13 @@
 import { StyleSheet, View } from "react-native";
 
+import { DsFooter } from "@/components";
 import { DsText } from "@/components/DsText";
 
 export default function HomeScreen() {
   return (
     <View>
       <DsText>HomeScreen</DsText>
+      <DsFooter />
     </View>
   );
 }
