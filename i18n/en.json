@@ -7,6 +7,9 @@
   "logo": {
     "title": "Digital Colleger"
   },
+  "search_bar": {
+    "placeholder": "Pesquisar produto..."
+  },
   "footer": {
     "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem possimus similique sint blanditiis adipisci commodi, inventore animi laboriosam veniam ipsum cupiditate iusto? Aliquid, officia quidem! Dignissimos nisi animi illum.",
     "infomation": {

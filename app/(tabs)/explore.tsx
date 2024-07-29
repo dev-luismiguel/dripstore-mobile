@@ -1,5 +1,6 @@
+import { StyleSheet, Text, View } from "react-native";
+
 import { DsButton } from "@/components/DsButton";
-import { StyleSheet, View, Text } from "react-native";
 
 export default function TabTwoScreen() {
   return (

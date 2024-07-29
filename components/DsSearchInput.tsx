@@ -1,14 +1,23 @@
 import { FC } from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 
+import { useTranslator } from "@/i18n/useTranslator";
+import { colors } from "@/theme/colors";
 import { SPACING } from "@/theme/spacing";
 
+import { DsIcon } from "./DsIcon";
+
 export const DsSearchInput: FC = () => {
+  const { t } = useTranslator();
+
   return (
     <View style={styles.container}>
-      <View style={styles.icon} />
-      <TextInput style={styles.input} placeholder="Search" />
-      <View style={styles.clearButton} />
+      <TextInput
+        style={styles.input}
+        placeholder={t("search_bar.placeholder")}
+        placeholderTextColor={colors.darkGray3_60}
+      />
+      <DsIcon icon="Search" style={styles.searchIcon} />
     </View>
   );
 };
@@ -16,27 +25,20 @@ export const DsSearchInput: FC = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    backgroundColor: "grey",
+    backgroundColor: colors.darkGray2_04,
     flex: 1,
-    borderWidth: 1,
     borderRadius: 8,
     gap: SPACING.TINY,
-  },
-  icon: {
-    alignSelf: "center",
-    width: 24,
-    height: 24,
-    backgroundColor: "blue",
+    padding: SPACING.TINY,
   },
   input: {
-    borderWidth: 1,
     padding: SPACING.SMALLER,
     flex: 1,
   },
-  clearButton: {
+  searchIcon: {
     alignSelf: "center",
     width: 24,
     height: 24,
-    backgroundColor: "green",
+    marginRight: SPACING.SMALLER,
   },
 });

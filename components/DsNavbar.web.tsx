@@ -1,29 +1,39 @@
 import { FC } from "react";
-import { SafeAreaView, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
+import { colors } from "@/theme/colors";
 import { SPACING } from "@/theme/spacing";
+
+import { DsButton } from "./DsButton";
+import { DsIcon } from "./DsIcon";
+import { DsSearchInput } from "./DsSearchInput";
+import { DsShoppingCart } from "./DsShoppingCart";
+import { DsText } from "./DsText";
 
 export const DsNavbar: FC = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={[styles.logo, styles.blue]} />
-    </SafeAreaView>
+    <View style={styles.innerContainer}>
+      <DsIcon icon="Logo" />
+      <DsText text="Digital Store" style={styles.title} />
+      <DsSearchInput />
+      <DsButton text="Cadastre-se hahaha" />
+      <DsButton text="Entrar" />
+      <DsShoppingCart />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "pink",
-    borderWidth: 1,
+  innerContainer: {
+    padding: SPACING.LARGE,
+    gap: SPACING.NORMAL,
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
-    padding: SPACING.NORMAL,
   },
-  logo: {
-    height: 40,
-    width: 40,
-    borderWidth: 1,
+  title: {
+    color: colors.primary,
+    fontWeight: "semibold",
+    fontSize: 36,
   },
   red: {
     backgroundColor: "red",
